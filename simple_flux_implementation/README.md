@@ -15,7 +15,7 @@ http://azu.github.io/slide/react-meetup/flux.html
 Fluxの理解を深めるための演習です。
 
 このプロジェクトは超簡単で質素なTODOリストアプリケーションが実装してあります。言語はTypeScriptです。
-このプロジェクトを上記の資料を参考にしてステートフルな実装からFluxを使ったステートレスな実装にしてください。
+このプロジェクトを上記の資料を参考にしてAction -> Dispatcher -> Store -> ViewとなるようなFlux実装をしてください。
 
 具体的には、FluxのStore,ActionCreator,Dispatcher(資料ではEventEmitter)を実装してApp.tsxがstateを持たなくても動作するようにしてください。
 
