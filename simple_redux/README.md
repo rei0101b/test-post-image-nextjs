@@ -33,8 +33,7 @@ console.log(store.getState())
 ```
 
 ### State is read-only
-Stateは読み取り専用です。store.getState()を直接書き換えるようなことはしてはいけません。変更は必ずActionを発行してReducer経由で行います。ActionはTypeというActionを一意に判別できる識別子を持つJSONです。Type以外の構造については決まりはありません。
-
+Stateは読み取り専用です。store.getState()を直接書き換えるようなことはしてはいけません。変更は必ずActionを発行してReducer経由で行います。ActionはTypeというActionを一意に判別できる識別子を持つJSONです。Type以外の構造については決まりはありません。
 ```
 store.dispatch({
   type: 'COMPLETE_TODO',
@@ -95,6 +94,11 @@ Reduxを使った開発では以下の手順で始めるのが良いと思いま
 
 ## 必要なパッケージ
 Reduxをインストールしてください。
+```
+yarn add redux
+// または
+npm add redux
+```
 
 ## 実行環境
 nodeのstableバージョンを入れてください。
