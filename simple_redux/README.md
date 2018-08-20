@@ -97,7 +97,7 @@ Reduxをインストールしてください。
 ```
 yarn add redux
 // または
-npm add redux
+npm i redux
 ```
 
 ## 実行環境
