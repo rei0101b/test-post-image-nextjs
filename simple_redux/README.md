@@ -11,7 +11,7 @@ ReduxとはFluxの実装です。Fluxの実装では一番使われています�
 重要なのは3つの原則です(https://github.com/reduxjs/redux/blob/master/docs/introduction/ThreePrinciples.md)
 
 ### Simgle source of truth
-ReduxではState（前の演習ではStoreでしたが）は基本的に1つです。そのストアに対して変更のアクションと監視を行います。ストアはただのJSONです。
+ReduxではState（前の演習ではStoreでしたが）は基本的に1つです。そのストアに対して変更のアクションと監視を行います。StateはただのJSONです。
 ```
 console.log(store.getState())
 
