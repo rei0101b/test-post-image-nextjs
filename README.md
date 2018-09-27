@@ -12,3 +12,5 @@ React/ReactNative の演習用リポジトリです。特別な理由が無い�
   - Redux の基礎を学びます。具体的には simple_flux_implementation で作った TODO アプリケーションを Redux を使って再実装します。そして、ReduxDevTools という Redux 用のデバッグツールを使ってデバッグ方法を学びます。ついでに Ducks というデザインパターンについても学びます。
 - react_redux
   - React-Redux の基礎を学びます。具体的には simple_flux に React-Redux を使ってコンポーネント別に ResuxStore を接続する方法、パフォーマンスを考慮した使い方などを学びます。
+- next.js
+  - React をサーバーサイドで動かすことができる、いわゆる Server Side Rendering(SSR)を可能にするライブラリです。その他にも便利な機能があるので使い方を学びます。
