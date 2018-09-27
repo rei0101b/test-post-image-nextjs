@@ -1,0 +1,4 @@
+export default {
+  UPDATE_NEW_TODO: 'UPDATE_NEW_TODO',
+  ADD_TO_TODOS: 'ADD_TO_TODOS'
+}
