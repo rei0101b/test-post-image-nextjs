@@ -152,3 +152,44 @@ yarn start
 // または
 npm start
 ```
+
+
+# おまけ　redux-devtoolsを入れてみる
+
+redux-devtoolsというReduxを使う上で非常に便利なライブラリがあります。
+
+https://github.com/zalmoxisus/redux-devtools-extension
+
+reduxの任意の時点でのstateやdispatchされたactionの時系列、stateのdiff, actionの再発行など非常に便利な機能があります。
+
+これを使ってみます。
+
+## インストール
+
+Chromeのエクステンションを入れます
+
+https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
+
+
+次に `redux-devtools-extension` をインストールします。
+
+```
+npm install --save-dev redux-devtools-extension
+```
+
+index.tsxを書き換えます
+```js
+import { devToolsEnhancer } from 'redux-devtools-extension'
+
+ReactDOM.render(
+  <Provider store={createStore(Store, devToolsEnhancer({}))}>
+    <App />
+  </Provider>,
+  document.getElementById('root') as HTMLElement
+)
+
+```
+
+あとは `npm start or yarn start` をして chromeのdeveloper tools にあるreduxを起動する
+
+<img src="./redux-devtools.png"/>
